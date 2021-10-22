@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText"
             android:layout_alignParentRight="true"
-            android:text="検索" />
+            android:text="検索"
+            />
 
         <EditText
             android:id="@+id/editText"
