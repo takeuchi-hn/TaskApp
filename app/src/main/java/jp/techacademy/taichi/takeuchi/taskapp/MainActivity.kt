@@ -50,14 +50,13 @@ class MainActivity : AppCompatActivity() {
         // 検索ボタンを押したときのアクション
         search_button.setOnClickListener{
             //検索をかける
-            /*val results = mRealm.where(Task::class.java).equalTo("category", category_edit_text.toString()).findAll()
+            val results = mRealm.where(Task::class.java).equalTo("category", editText.text.toString()).findAll()
             // 上記の結果を、TaskListとしてセットする
             mTaskAdapter.mTaskList = mRealm.copyFromRealm(results)
             // TaskのListView用のアダプタに渡す
             listView1.adapter = mTaskAdapter
             // 表示を更新するために、アダプターにデータが変更されたことを知らせる
-            mTaskAdapter.notifyDataSetChanged()*/
-            search_button.text="検索中"
+            mTaskAdapter.notifyDataSetChanged()
         }
 
         // ListViewを長押ししたときの処理
